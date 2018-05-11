@@ -1,10 +1,10 @@
 <div id="mycarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
-    <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#mycarousel" data-slide-to="1"></li>
-    <li data-target="#mycarousel" data-slide-to="2"></li>
-    <li data-target="#mycarousel" data-slide-to="3"></li>
+    <li data-target="#slide1" data-slide-to="0" class="active"></li>
+    <li data-target="#slide2" data-slide-to="1"></li>
+    <li data-target="#slide3" data-slide-to="2"></li>
+    <li data-target="#slide4" data-slide-to="3"></li>
   </ol>
 
   <!-- Wrapper for slides -->
@@ -17,7 +17,7 @@
           <h4 class="fonction" style="margin-top: -20px;">Artiste peintre</h4>
           <p class="nom2" style="font-weight: bold;">Emmanuel Pertuisot,</p>
         <p class="presentation">Bercer depuis toujours par le rêve et l’imaginaire. Il s’évade de son quotidien dans la trames de ses toiles , dans lequel il peint un monde qui se balance entre rêve et réalité.</p>
-        <p class="call-to-action"><%= link_to "ARTWORKS", "/index.html", anchor: "contact", class: "btn btn-primary btn-lg" %></p>
+        <p class="call-to-action"><%= link_to "ARTWORKS", galleries_path, class: "btn btn-primary btn-lg" %></p>
     </div>
       </div>
 </div>
@@ -26,8 +26,8 @@
       <%= image_tag "peinture30.jpg" %>
       <div class="carousel-caption">
         <div class="banner-content">
-        <div class="titre-banner">
-          <h1></h1>
+        <div class="titre-banner display-none">
+          <h1>test</h1>
         </div>
         <p></p>
       </div>
@@ -131,7 +131,7 @@
         <%= image_tag "glacis2.jpg", class: "img-feature"%>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-6">
-        <p>Et je vais ensuite travaillé couches par couche ma peinture, Entre chaque couche de peinture je laisse au  minimum une semaine de séchage, Il m'arrive très souvent d'avoir six ou sept couches de peinture sur un tableau, Plus il va y avoir de couches plus les nuances vont  Être importante et le tableau brillant , Ça apporte aussi une stabilité dans le temps à la peinture À l'huile.
+        <p>Et je vais ensuite travaillé couche par couche ma peinture, Entre chaque couche de peinture je laisse au  minimum une semaine de séchage, Il m'arrive très souvent d'avoir six ou sept couches de peinture sur un tableau, Plus il va y avoir de couches plus les nuances vont  Être importante et le tableau brillant , Ça apporte aussi une stabilité dans le temps à la peinture À l'huile.
 </p>
         <%= link_to "En savoir plus.", "https://www.youtube.com/watch?v=v3sIHLNu8Ho", class: "btn btn-primary"%>
       </div>

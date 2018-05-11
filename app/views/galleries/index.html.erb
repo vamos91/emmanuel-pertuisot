@@ -1,0 +1,28 @@
+<div class="titre-gallery padded-top text-center">
+  <h2>GALLERIE</h2>
+</div>
+<div class="container separator padded">
+  <hr>
+  <p style="font-weight: lighter;" class="text-center">Ses œuvres participent à de nombreuses expositions , récompensé par plusieurs prix, dont le prix des Beaux- Arts au salon international de Kobé ( Japon) en 2005 .</p>
+  <hr>
+</div>
+
+
+
+<div class="wrapper padded">
+  <div class="container">
+    <div class="row">
+      <% @galleries.each do |gallery| %>
+      <div class="col-xs-12 col-sm-6 col-md-3 crop">
+        <div class="bandeau">
+          <i class="fa fa-search" style="color: #f2b632; font-size: 57px;"></i>
+        </div>
+        <div class="bandeau2" style="color: black;">
+          <%= gallery.title %>
+        </div>
+        <%= cl_image_tag gallery.picture%>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>

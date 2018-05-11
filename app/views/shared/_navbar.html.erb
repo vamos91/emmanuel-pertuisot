@@ -1,4 +1,8 @@
+<%if current_page?(root_path)%>
 <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+  <%else%>
+  <nav class="navbar navbar-fixed-top navbar-inverse nav--sticky" role="navigation">
+    <%end%>
   <div class="container">
     <div class="navbar-header">
        <%= link_to "Emmanuel Pertuisot", "/", class: "navbar-brand" %>
@@ -9,7 +13,7 @@
           <%= link_to "A propos de l'artiste","/index.html", anchor: "about"%>
         </li>
         <li>
-          <%= link_to "Gallerie", "../page/realisation.html"%>
+          <%= link_to "Gallerie", galleries_path%>
         </li>
         <li>
           <%= link_to "Blog","/index.html", anchor: "price"%>

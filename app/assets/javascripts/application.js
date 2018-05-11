@@ -14,4 +14,3 @@ sr.reveal('.nom2', {origin:'left',delay: 1000, distance: '100px', duration: 1000
 sr.reveal('.presentation', {origin:'right',delay: 1000, distance: '1000px', duration: 1000, reset: false})
 sr.reveal('.call-to-action', {origin:'bottom',delay: 1000, distance: '1000px', duration: 1000, reset: false})
 
-

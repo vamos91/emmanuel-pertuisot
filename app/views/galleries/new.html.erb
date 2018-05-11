@@ -1,0 +1,8 @@
+<h1>new</h1>
+<%= simple_form_for(@gallery) do |f| %>
+  <%= f.input :title %>
+  <%= f.text_field :description %>
+  <%= f.input :picture %>
+  <%= f.input :picture_cache, as: :hidden %>
+  <%= f.submit %>
+<% end %>

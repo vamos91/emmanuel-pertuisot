@@ -6,6 +6,22 @@
 }
 
 .padded{
-  padding-top: 5em;
+
   padding-bottom: 5em;
+}
+
+.padded-top{
+   padding-top: 6em;
+}
+
+.display-none{
+  display: none;
+}
+
+.display-block{
+  display: block;
+}
+
+hr{
+  border-top: 2px solid $light-yellow;
 }
