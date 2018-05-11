@@ -1,0 +1,22 @@
+.title-painting{
+  margin-top: 80px;
+  height: 76px;
+  background-color: $light-gray;
+  color: #677077;
+  font-weight: lighter;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid $light-yellow;
+}
+
+.picture-painting{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.picture-painting img{
+  width: 100%;
+}

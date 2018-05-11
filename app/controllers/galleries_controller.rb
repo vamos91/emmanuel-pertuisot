@@ -9,7 +9,9 @@ end
 
 def create
   @gallery = Gallery.new(gallery_params)
-  @gallery.save
+  if @gallery.save
+    redirect_to galleries_path
+  end
 end
 
 def show
