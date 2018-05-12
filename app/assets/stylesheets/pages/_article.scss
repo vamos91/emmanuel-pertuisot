@@ -1,0 +1,73 @@
+.article-bandeau{
+  background-color: $light-yellow;
+  height: 100vh;
+}
+
+
+.article-bandeau img{
+  margin-top: 86px;
+}
+
+
+
+
+
+
+
+.panel{
+  width: 100%;
+  font-size: 14px;
+}
+
+.article{
+  position: relative;
+  padding: 8px;
+  color: gray;
+}
+
+.titre-article{
+  position: relative;
+}
+
+.panel-default .titre-article{
+  color: $light-yellow;
+}
+
+.panel-article{
+ box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+
+.article .description {
+  word-wrap: break-word;
+}
+
+.media h4{
+  font-size: 14px;
+}
+
+.media .posted{
+  position: absolute;
+  font-size: 11px;
+  top: 10px;
+  right: 10px;
+}
+
+.media .user_status{
+  color: gray;
+  font-size: 12px;
+}
+
+.panel-heading{
+  font-size: 20px;
+}
+
+.margin-panel{
+  //margin-left: 22px;
+}
+
+.article-scroll{
+  overflow: scroll;
+  height: 100vh;
+}
+

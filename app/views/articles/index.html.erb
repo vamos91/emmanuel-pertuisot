@@ -1,17 +1,41 @@
-    <div class="row well">
-      <% @articles.each do |article| %>
-      <div class="col-xs-12 col-sm-6 col-md-8">
-        <div class="card">
-        <%= cl_image_tag article.photo, width: "100%" %>
-        <%= article.title %>
-        <%= article.description %>
-        <%= article.created_at %>
-        </div>
-      </div>
-      <% end %>
+    <div class="row">
       <div class="col-xs-12 col-sm-4 col-md-4">
-
+      <div class="article-bandeau" >
+        <%= image_tag "manu2.jpg", width: "100%" %>
       </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-8 article-scroll padded">
+         <% @articles.each do |article| %>
+       <div class="margin-panel padded">
+          <div class="panel panel-default panel-article">
+                <div class="panel-heading titre-article">
+                  <div class="media" style="padding-bottom: 5px;">
+                    <div class="description"><p><%= article.title.capitalize %></p></div>
+                      <div class="media-body">
+                        <p class="posted">Le <%= artice_date = I18n.l(article.created_at, format: :short) %></p>
+                    </div>
+                </div>
+
+                </div>
+                  <div class="article">
+                    <div class="description"><p><%= article.description.capitalize %></p></div>
+                    <% if article.photo != nil %>
+                      <p><%= cl_image_tag article.photo, class: "picture_article", width: "100%" %></p>
+                    <% end %>
+                  </div>
+              </div>
+            </div>
+            <% end %>
+      </div>
+
     </div>
+
+
+
+
+
+
+
 
 
