@@ -6,7 +6,7 @@ class ContactFormMailer < ApplicationMailer
     # @email = contact_form.email
     @contact_form = contact_form
     mail(
-      to: 'acardnicolas91@gmail.com',
+      to: 'emmanuel.pertuisot@icloud.com',
       #body: @contact_form.content,
       subject: "Nouveau message de #{@contact_form.name}, #{@contact_form.email}"
     )
