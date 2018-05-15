@@ -8,7 +8,7 @@ end
 def create
   @contact_form = ContactForm.new(contact_page_params)
   if @contact_form.save
-    redirect_to root_path
+    redirect_to new_contact_form_path, notice: 'Message envoyé'
   end
 end
 

@@ -15,7 +15,7 @@ module EmmanuelPertuisot
         end
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
-    config.action_mailer.delivery_method = :sendmail
+    config.action_mailer.delivery_method = :send_notif
     config.action_mailer.perform_deliveries = true
     config.action_mailer.raise_delivery_errors = true
     # Settings in config/environments/* take precedence over those specified here.
