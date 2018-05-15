@@ -18,7 +18,7 @@ gem 'uglifier'
 gem 'webpacker'
 gem 'email_validator'
 
-
+gem 'postmark-rails'
 gem 'cloudinary'
 gem 'carrierwave', '~> 1.2'
 
