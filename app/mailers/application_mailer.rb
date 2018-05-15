@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'no-reply@emmanuel-pertuisot.com'
+  default from: 'contact@skypicture.fr'
   layout 'mailer'
 end
