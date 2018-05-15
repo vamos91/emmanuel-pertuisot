@@ -1,5 +1,4 @@
 class ContactFormMailer < ApplicationMailer
-   default from: "Admin <admin@awesomesauce.app.com>"
 
   def contact_email(contact_form)
     # @content = contact_form.content
