@@ -1,10 +1,17 @@
 <div class="well col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 padded" style="margin-top: 100px;">
   <p class="text-center">ENTRER UN NOUVELLE ARTICLE</p>
 <%= simple_form_for(@article) do |f| %>
-  <%= f.input :title %>
-  <%= f.input :description %>
-  <%= f.input :photo %>
+<div class="form-group">
+  <%= f.input :title, label: false, placeholder: 'Met nous un titre bien sympa !' %>
+</div>
+  <div class="form-group">
+      <%= f.text_area :description, label: :DESCRIPTION,rows: 10, placeholder: "C'est quoi cette article ?? aller...lache toi sans faire de copier/coller ! :)", class: 'form-control'%>
+  </div>
+  <div class="form-group">
+     <%= f.input :photo, label: :PHOTO %>
   <%= f.input :photo_cache, as: :hidden %>
-  <%= f.submit %>
+  </div>
+  <%= f.submit "ENVOYER" %>
 <% end %>
 </div>
+

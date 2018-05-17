@@ -1,0 +1,74 @@
+.banner-mobile{
+  display: none;
+}
+
+@media (max-width:450px) {
+
+.navbar-header{
+  display: none;
+}
+
+#mycarousel{
+  display: none;
+}
+
+.banner-mobile{
+  display: block;
+  color: white;
+  text-align: center;
+  height: 100vh;
+  background-size: cover !important;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), image-url('peinture13.jpg');
+ //background-image: image-url('peinture1.jpg');
+}
+
+.banner-home-mobile .presentation{
+  padding: 25px;
+}
+
+.banner-home-mobile .nom2{
+  display: none;
+}
+
+.punch-line{
+  font-size: 17px;
+  padding: 30px;
+}
+.title span{
+  font-size: 25px;
+}
+
+.a-propos p{
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.a-propos2 .titre-article{
+  font-size: 28px;
+}
+
+.feature1 p{
+font-size: 14px;
+}
+
+.navbar{
+  background-color: gray;
+  margin-bottom: 0;
+}
+
+.navbar .fa{
+  font-size: 38px;
+  color: white;
+}
+
+.nav--sticky2{
+  display: none;
+}
+
+
+
+}

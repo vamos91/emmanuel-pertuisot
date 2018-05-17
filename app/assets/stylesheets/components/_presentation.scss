@@ -5,10 +5,10 @@
 }
 
 .a-propos .row {
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // background-position: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
 }
 
 .a-propos img{
@@ -35,7 +35,12 @@ padding: 100px;
 
 
 
-
+.titre-article{
+  text-align: center;
+  font-weight: lighter;
+  font-size: 47px;
+  color: white;
+}
 
 
 

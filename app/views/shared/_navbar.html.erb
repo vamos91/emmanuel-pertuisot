@@ -1,5 +1,5 @@
 <%if current_page?(root_path)%>
-<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+<nav class="navbar navbar-fixed-top navbar-inverse hidden-xs" role="navigation">
   <%else%>
   <nav class="navbar navbar-fixed-top nav--sticky2" role="navigation">
     <%end%>
@@ -25,3 +25,18 @@
     </div>
   </div>
 </nav>
+
+
+
+
+<div class="navbar navbar-mobile hidden-md hidden-lg">
+    <div class="dropdown">
+     <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right dropdown-menu-center">
+        <li><%= link_to "A propos de l'artiste", root_path%></li>
+        <li><%= link_to "Gallerie", galleries_path%></li>
+        <li><%= link_to "Blog", articles_path%></li>
+        <li><%= link_to "Contact", new_contact_form_path %></li>
+      </ul>
+    </div>
+  </div>
