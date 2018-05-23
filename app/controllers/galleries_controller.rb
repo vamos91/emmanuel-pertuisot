@@ -5,6 +5,7 @@ end
 
 def new
   @gallery = Gallery.new
+  @galleries = Gallery.all
 end
 
 def create
@@ -21,7 +22,7 @@ end
 def update
   find_painting
   @painting.update(gallery_params)
-  redirect_to gallery_index_path
+  redirect_to new_gallery_path
 
 end
 
@@ -33,7 +34,7 @@ end
 def destroy
   find_painting
   @painting.destroy
-  redirect_to gallery_index_path
+  redirect_to new_gallery_path
 end
 
 

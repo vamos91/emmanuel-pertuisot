@@ -34,3 +34,38 @@ hr{
   background-color: black;
   border-color: black;
 }
+
+.expendable .panel{
+  width: 100%;
+}
+
+.expendable .panel-group{
+  margin-bottom: 0;
+}
+
+.expendable img{
+  width: 30%;
+  margin-right: 15px;
+}
+
+.panel-title{
+  position: relative;
+  font-size: 17px;
+}
+
+.panel-title li
+{
+  display: inline-block;
+}
+
+.panel-title .supprimer{
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+.panel-title .modifier{
+  position: absolute;
+  right: 100px;
+  top: 0;
+}
+
