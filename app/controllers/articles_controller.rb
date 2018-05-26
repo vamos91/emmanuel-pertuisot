@@ -5,6 +5,7 @@ class ArticlesController < ApplicationController
 
   def new
     @article = Article.new
+    @articles = Article.all
   end
 
   def create
@@ -24,10 +25,14 @@ class ArticlesController < ApplicationController
 
   def update
     find_article
+    @article.update(params_article)
+    redirect_to new_article_path
   end
 
   def destroy
     find_article
+    @article.destroy
+    redirect_to new_article_path
 
   end
 
