@@ -1,6 +1,5 @@
 class ContactFormsController < ApplicationController
 
-
 def new
    @contact_form = ContactForm.new
 end
@@ -8,23 +7,9 @@ end
 def create
   @contact_form = ContactForm.new(contact_page_params)
   if @contact_form.save
-    redirect_to new_contact_form_path, notice: 'Message envoyé'
+    redirect_to new_contact_form_path
   end
 end
-
-# def send_mail
-#   @contact_form.attribute = contact_page_params
-#    # ContactMailer.contact_email(contact_page_params).deliver_now
-#    #  redirect_to contact_path, notice: 'Message sent'
-# end
-
-#   def submit_form
-#   @contact_page = ContactPage.new
-
-#   if @contact_page.save(contact_page_params)
-#    redirect_to action: :success
-#   end
-# end
 
 private
 
