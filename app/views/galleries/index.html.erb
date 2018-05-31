@@ -9,6 +9,45 @@
 
 
 
+
+
+
+
+<div class="wrapper padded">
+  <div class="container">
+  <!--   <div class="toolbar mb2 mt2">
+  <button class="btn fil-cat" href="" data-rel="all">All</button>
+  <button class="btn fil-cat" data-rel="web">Websites</button>
+  <button class="btn fil-cat" data-rel="flyers">Flyers</button>
+  <button class="btn fil-cat" data-rel="bcards">Business Cards</button>
+</div> -->
+    <div id="portfolio">
+      <% @galleries.each do |gallery| %>
+      <div class="tableau">
+         <div class="bandeau">
+          <%= link_to gallery_path(gallery) do%>
+          <i class="fa fa-search" style="color: #f2b632; font-size: 57px;"></i>
+          <% end %>
+        </div>
+        <div class="bandeau2">
+          <%= gallery.title %>
+        </div>
+          <div class="tile scale-anm">
+            <%= cl_image_tag gallery.picture%>
+          </div>
+        </div>
+      <% end %>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!--
 <div class="wrapper padded">
   <div class="container">
     <div class="row">
@@ -28,3 +67,5 @@
     </div>
   </div>
 </div>
+ -->
+
