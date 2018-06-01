@@ -29,11 +29,13 @@
           <i class="fa fa-search" style="color: #f2b632; font-size: 57px;"></i>
           <% end %>
         </div>
-        <div class="bandeau2">
+        <div class="bandeau2 hidden-xs">
           <%= gallery.title %>
         </div>
           <div class="tile scale-anm">
+            <%= link_to gallery_path(gallery) do%>
             <%= cl_image_tag gallery.picture%>
+            <% end %>
           </div>
         </div>
       <% end %>
