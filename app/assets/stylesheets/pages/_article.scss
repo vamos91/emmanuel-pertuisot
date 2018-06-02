@@ -3,16 +3,9 @@
   height: 100vh;
 }
 
-
 .article-bandeau img{
   margin-top: 86px;
 }
-
-
-
-
-
-
 
 .panel{
   width: 80%;
@@ -69,5 +62,11 @@
 .article-scroll{
   overflow: scroll;
   height: 100vh;
+
 }
 
+.article-cadre{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
