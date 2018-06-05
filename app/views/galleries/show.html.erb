@@ -1,5 +1,8 @@
 <div class="title-painting">
-  <%=  link_to "Retour à la gallerie", galleries_path, class: "btn btn-default btn-xs" %>
+  <%=  link_to "Retour à la gallerie", galleries_path, class: "btn btn-default btn-xs hidden-xs" %>
+  <%=  link_to galleries_path, class: "hidden-lg hidden-md hidden-sm" do %>
+  <i class="fa fa-angle-left" style="font-size: 35px;"></i>
+  <% end %>
   <%= @painting.title%>
 </div>
 
