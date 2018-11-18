@@ -43,7 +43,7 @@ def find_article
 end
 
 def params_article
-    params.require(:article).permit(:title, :description, :photo, :photo_cache)
+    params.require(:article).permit(:title, :description, :photo, :photo_cache, :illustration_1,:illustration_2,:illustration_3,:illustration_4)
 end
 
 end

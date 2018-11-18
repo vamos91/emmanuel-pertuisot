@@ -1,0 +1,26 @@
+<div class="wrapper text-center" style="margin-top: 100px; margin-bottom: 100px;">
+  <div class="container">
+     <hr>
+  <strong><%= @article.title %></strong><br>
+    <%= @article.description %>
+    <hr>
+    <div class="row">
+      <%= cl_image_tag @article.photo, width: "100%" %>
+      <hr>
+      <div class="row vignette-blog">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <%= cl_image_tag @article.illustration_1, width: "100%" %>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <%= cl_image_tag @article.illustration_2, width: "100%" %>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <%= cl_image_tag @article.illustration_3, width: "100%" %>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <%= cl_image_tag @article.illustration_4, width: "100%" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
