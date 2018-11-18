@@ -9,18 +9,58 @@
       <hr>
       <div class="row vignette-blog">
         <div class="col-xs-12 col-sm-6 col-md-3">
+          <%= link_to "#newTag1", data: { toggle: "modal" } do%>
           <%= cl_image_tag @article.illustration_1, width: "100%" %>
+          <% end %>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3">
+          <%= link_to "#newTag2", data: { toggle: "modal" } do%>
           <%= cl_image_tag @article.illustration_2, width: "100%" %>
+          <% end %>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3">
+          <%= link_to "#newTag3", data: { toggle: "modal" } do%>
           <%= cl_image_tag @article.illustration_3, width: "100%" %>
+          <% end %>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3">
+          <%= link_to "#newTag4", data: { toggle: "modal" } do%>
           <%= cl_image_tag @article.illustration_4, width: "100%" %>
+          <% end %>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+
+<div id="newTag1" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <%= cl_image_tag @article.illustration_1, width: "100%" %>
+    </div>
+  </div>
+</div>
+<div id="newTag2" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <%= cl_image_tag @article.illustration_2, width: "100%" %>
+    </div>
+  </div>
+</div>
+<div id="newTag3" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <%= cl_image_tag @article.illustration_3, width: "100%" %>
+    </div>
+  </div>
+</div>
+<div id="newTag4" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <%= cl_image_tag @article.illustration_4, width: "100%" %>
+    </div>
+  </div>
+</div>
+
+
