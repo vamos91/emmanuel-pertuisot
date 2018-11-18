@@ -11,20 +11,48 @@
         </div>
          <% @articles.each do |article| %>
        <div class="margin-panel padded article-cadre">
-          <div class="panel panel-default panel-article">
-                <div class="panel-heading titre-article">
-                  <div class="media" style="padding-bottom: 5px;">
+          <div class="panel panel-article">
+                <div class=" titre-article">
+                  <!-- <div class="media" style="padding-bottom: 5px;">
+                    <div class="description"><p><%= article.title.capitalize %></p></div>
+                      <div class="media-body">
+                        <p class="posted">Le <%= artice_date = I18n.l(article.created_at, format: :short) %></p>
+                    </div>
+                </div> -->
+
+                </div>
+                  <div class="article">
+                    <div class="media" style="padding-bottom: 5px;">
                     <div class="description"><p><%= article.title.capitalize %></p></div>
                       <div class="media-body">
                         <p class="posted">Le <%= artice_date = I18n.l(article.created_at, format: :short) %></p>
                     </div>
                 </div>
-
-                </div>
-                  <div class="article">
                     <div class="description"><p><%= article.description.capitalize %></p></div>
                     <% if article.photo != nil %>
+                  <% if article.illustration_1.blank? && article.illustration_2.blank? && article.illustration_3.blank? && article.illustration_4.blank? %>
+                    <%= link_to article_path(article) do%>
                       <p><%= cl_image_tag article.photo, class: "picture_article", width: "100%" %></p>
+                    <% end %>
+                  <% else %>
+
+                      <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6 vignette-blog-index" style="padding-right: 0;">
+                          <%= cl_image_tag article.photo, class: "picture_article", width: "100%" %>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 vignette-blog-index" style="padding-left: 0">
+                          <%= cl_image_tag article.illustration_1, class: "picture_article", width: "100%" %>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6 vignette-blog-index" style="padding-right: 0;">
+                          <%= cl_image_tag article.illustration_2, class: "picture_article", width: "100%" %>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 vignette-blog-index" style="padding-left: 0;">
+                          <%= cl_image_tag article.illustration_3, class: "picture_article", width: "100%" %>
+                        </div>
+                      </div>
+                    <% end %>
                     <% end %>
                   </div>
               </div>
