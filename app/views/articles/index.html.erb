@@ -30,10 +30,10 @@
                 </div>
                     <div class="description"><p><%= article.description.capitalize %></p></div>
                     <% if article.photo != nil %>
-                  <% if article.illustration_1.blank? && article.illustration_2.blank? && article.illustration_3.blank? && article.illustration_4.blank? %>
                     <%= link_to article_path(article) do%>
+                  <% if article.illustration_1.blank? && article.illustration_2.blank? && article.illustration_3.blank? && article.illustration_4.blank? %>
+
                       <p><%= cl_image_tag article.photo, class: "picture_article", width: "100%" %></p>
-                    <% end %>
                   <% else %>
 
                       <div class="row">
@@ -52,6 +52,7 @@
                           <%= cl_image_tag article.illustration_3, class: "picture_article", width: "100%" %>
                         </div>
                       </div>
+                    <% end %>
                     <% end %>
                     <% end %>
                   </div>
