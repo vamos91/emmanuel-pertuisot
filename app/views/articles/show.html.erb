@@ -11,23 +11,31 @@
       <% unless  @article.illustration_1.blank? && @article.illustration_2.blank? && @article.illustration_3.blank? && @article.illustration_4.blank? %>
       <div class="row vignette-blog">
         <div class="col-xs-12 col-sm-6 col-md-3">
+          <% unless @article.illustration_1.blank? %>
           <%= link_to "#newTag1", data: { toggle: "modal" } do%>
           <%= cl_image_tag @article.illustration_1, width: "100%" %>
           <% end %>
+          <% end %>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3">
+          <% unless @article.illustration_2.blank? %>
           <%= link_to "#newTag2", data: { toggle: "modal" } do%>
           <%= cl_image_tag @article.illustration_2, width: "100%" %>
           <% end %>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <%= link_to "#newTag3", data: { toggle: "modal" } do%>
-          <%= cl_image_tag @article.illustration_3, width: "100%" %>
           <% end %>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3">
-          <%= link_to "#newTag4", data: { toggle: "modal" } do%>
+          <% unless @article.illustration_3.blank? %>
+          <%= link_to "#newTag3", data: { toggle: "modal" } do%>
+          <%= cl_image_tag @article.illustration_3, width: "100%" %>
+          <% end %>
+          <% end %>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <% unless @article.illustration_4.blank? %>
+            <%= link_to "#newTag4", data: { toggle: "modal" } do%>
           <%= cl_image_tag @article.illustration_4, width: "100%" %>
+          <% end %>
           <% end %>
         </div>
       </div>
