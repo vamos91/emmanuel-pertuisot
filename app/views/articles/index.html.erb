@@ -41,15 +41,21 @@
                           <%= cl_image_tag article.photo, class: "picture_article", width: "100%" %>
                         </div>
                         <div class="col-xs-6 col-sm-6 col-md-6 vignette-blog-index" style="padding-left: 0">
-                          <%= cl_image_tag article.illustration_1, class: "picture_article", width: "100%" %>
+                          <% unless article.illustration_1.blank? %>
+                           <%= cl_image_tag article.illustration_1, class: "picture_article", width: "100%" %>
+                         <% end %>
                         </div>
                       </div>
                       <div class="row">
                         <div class="col-xs-6 col-sm-6 col-md-6 vignette-blog-index" style="padding-right: 0;">
+                          <% unless article.illustration_2.blank? %>
                           <%= cl_image_tag article.illustration_2, class: "picture_article", width: "100%" %>
+                          <% end %>
                         </div>
                         <div class="col-xs-6 col-sm-6 col-md-6 vignette-blog-index" style="padding-left: 0;">
+                          <% unless article.illustration_3.blank? %>
                           <%= cl_image_tag article.illustration_3, class: "picture_article", width: "100%" %>
+                          <% end %>
                         </div>
                       </div>
                     <% end %>
